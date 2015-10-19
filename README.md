@@ -1,6 +1,6 @@
 # git-full-review
 
-To help Git full code review command line tool
+Git full code review command line tool.
 
 What is ful code review?
 
