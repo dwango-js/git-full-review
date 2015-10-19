@@ -2,7 +2,7 @@
 
 Git full code review command line tool.
 
-What is ful code review?
+What is full code review?
 
 - [How to conduct a full code review on GitHub](http://astrofrog.github.io/blog/2013/04/10/how-to-conduct-a-full-code-review-on-github/ "How to conduct a full code review on GitHub")
 
@@ -16,6 +16,7 @@ Work on OS X, Linux, Windows.
 
     $ git-full-review
     # open https://github.com/<user>/<repo>/compare/empty...review?expand=1
+    # create pull request
 
 Workflow:
 
