@@ -40,5 +40,12 @@ exec('git merge "' + currentBranchName + '"');
 //  push to origin
 exec("git push origin " + reviewBranchName);
 exec("git push origin " + emptyBranchName);
+
+// cleanup local
+exec("git checkout " + currentBranchName);
+exec("git branch -D " + reviewBranchName);
+exec("git branch -D " + emptyBranchName);
 // Open like https://github.com/azu/sandbox-review/compare/empty...review?expand=1
+echo("=== Full Code Review");
+echo("=== Preparation Completion\n");
 echo("Open https://<domain>/<user>/<repo>/compare/empty...review?expand=1");
