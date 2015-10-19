@@ -13,6 +13,12 @@
   "version": "1.0.0",
   "description": "git full code review command line tool",
   "main": "index.js",
+  "files": [
+    "bin"
+  ],
+  "bin": {
+    "git-full-review": "bin/git-full-review.js"
+  },
   "directories": {
     "test": "test"
   },
