@@ -2,17 +2,17 @@
   "name": "git-full-review",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/azu/git-full-review.git"
+    "url": "git+https://github.com/dwango-js/git-full-review.git"
   },
   "email": "azuciao@gmail.com",
-  "homepage": "https://github.com/azu/git-full-review",
+  "homepage": "https://github.com/dwango-js/git-full-review",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/azu/git-full-review/issues"
+    "url": "https://github.com/dwango-js/git-full-review/issues"
   },
   "version": "1.0.0",
-  "description": "git full code review command line tool",
-  "main": "index.js",
+  "description": "Git full code review command line tool",
+  "main": "bin/git-full-review.js",
   "files": [
     "bin"
   ],
@@ -23,7 +23,6 @@
     "test": "test"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
     "git",
