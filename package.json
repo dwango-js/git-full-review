@@ -10,7 +10,7 @@
   "bugs": {
     "url": "https://github.com/dwango-js/git-full-review/issues"
   },
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Git full code review command line tool",
   "main": "bin/git-full-review.js",
   "files": [
