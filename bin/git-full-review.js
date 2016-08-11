@@ -6,7 +6,7 @@ function fail(message) {
     exit(1);
 }
 if (!which('git')) {
-    fail('Sorry, this script requires git');
+    fail('Sorry, this script requires git command');
 }
 // create empty...review
 var emptyBranchName = "empty";
@@ -34,9 +34,11 @@ exec("git clean -fxd");
 exec('git commit --allow-empty -m "Start of the review"');
 //  create empty branch
 exec('git branch ' + emptyBranchName);
-//  merge review point
-//  merge with prev branch(= probably master)
-exec('git merge "' + currentBranchName + '"');
+// merge review point
+// merge with prev branch(= probably master)
+// Git 2.9 require  --allow-unrelated-histories
+// http://stackoverflow.com/questions/27641380/git-merge-commits-into-an-orphan-branch/36528527#36528527
+exec('git merge --allow-unrelated-histories "' + currentBranchName + '"');
 //  push to origin
 exec("git push origin " + reviewBranchName);
 exec("git push origin " + emptyBranchName);
